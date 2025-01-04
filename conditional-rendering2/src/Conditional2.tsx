@@ -9,6 +9,9 @@ export default function Conditional2(props:any) {
     </div>
 
     function  presentMessageCount() {
+        if(notifications.find(message=> message===null)===null) {
+            throw("Error");
+        }
       if(notifications.length===0 ){
           return "You are all caught up";
       } 

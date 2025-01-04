@@ -2,6 +2,11 @@ import React from "react";
 import Conditional2 from "../src/Conditional2";
 import {render, screen} from "@testing-library/react";
 
+it("if messages has a null message then don't render it and show error", () =>{
+    expect(() => 
+        render(<Conditional2 messages={[null]}></Conditional2>)).toThrowError("Error")
+});
+
 it("unread message 0 means you are all caught up", () =>{
     render(<Conditional2 messages={[]}></Conditional2>);
     let text = "You are all caught up";
