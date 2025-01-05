@@ -1,0 +1,15 @@
+.on {
+    margin:5px;
+    width:100px;
+    color:white;
+    height:100px;
+    background: crimson!important;
+}
+
+.off {
+    margin:5px;
+    color:white;
+    width:100px;
+    height: 100px;
+    background: #85565c !important;
+}
